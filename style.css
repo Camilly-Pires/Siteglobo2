@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f;
+  padding: 15px 30px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Conteúdo */
+.conteudo {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.conteudo h2 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.conteudo p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.conteudo ul {
+  margin-left: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.img1 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Link de voltar */
+.voltar {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #001f3f;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .conteudo h1 {
+    font-size: 18px;
+  }
+
+  .conteudo p,
+  .conteudo ul {
+    font-size: 13px;
+  }
+  }
